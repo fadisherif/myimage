@@ -14,10 +14,8 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: 'testing folder contents before '
-        run: ls
-
       - uses: actions/checkout@v3
+
+      -name: "login to Docker hub"
+       run: docker login --username fadisherif --password dckr_pat_wMgZFnAMzwYbTp-iUs-vaFvMx-I
       
-      - name: 'testing folder contents after'
-        run: ls
