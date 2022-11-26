@@ -14,8 +14,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: 'testing get hub action'
-        run: pwd
+      - name: 'testing folder contents'
+        run: ls
 
-      - name: 'testing printing'
-        run: echo fady
